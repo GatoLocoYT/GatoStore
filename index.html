@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GatoStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="media/GatoStore2.png" alt="GatoStore">
+        </div>
+        <nav id="navbar">
+            <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="Componentes.html">Componentes</a>
+            <a href="/Tarjetas.html">Tarjetas de Regalo</a>
+            <a href="Perifericos.html">Periféricos</a>
+            <a href="Carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    <main class="content">
+        <section id="hero">
+            <h1>Bienvenido a GatoStore</h1>
+            <p>Tu tienda de hardware de confianza</p>
+        </section>
+        <section id="features">
+            <h2>Nuestros Productos Favoritos</h2>
+            <div class="product-grid">
+                <div class="product" data-id="1" data-name="Procesador AMD RYZEN 5 3600"
+                    data-description="Procesador A3-5500" data-price="120000" data-stock="15"
+                    data-image="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_16749_Procesador_AMD_RYZEN_5_3600_4.2GHz_Turbo_AM4_Wraith_Stealth_Cooler_f8ab4915-med.jpg">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_16749_Procesador_AMD_RYZEN_5_3600_4.2GHz_Turbo_AM4_Wraith_Stealth_Cooler_f8ab4915-med.jpg"
+                        alt="">
+                    <h3>Procesador AMD RYZEN 5 3600 4.2GHz Turbo AM4 Wraith Stealth Cooler</h3>
+                    <p>$120000</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <!-- Agregar más productos aquí con la misma estructura -->
+                <div class="product" data-id="2"
+                    data-name="Placa de Video XFX Radeon RX 6650 XT 8GB GDDR6 Speedster SWFT 210"
+                    data-description="Tarjeta de Video AMD" data-price="1500000" data-stock="10"
+                    data-image="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_33401_Placa_de_Video_XFX_Radeon_RX_6650_XT_8GB_GDDR6_Speedster_SWFT_210_589f396b-med.jpg">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_33401_Placa_de_Video_XFX_Radeon_RX_6650_XT_8GB_GDDR6_Speedster_SWFT_210_589f396b-med.jpg"
+                        alt="">
+                    <h3>Placa de Video XFX Radeon RX 6650 XT 8GB GDDR6 Speedster SWFT 210</h3>
+                    <p>Tarjeta de Video AMD</p>
+                    <p>$1500000</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <div class="product" data-id="3" data-name="Placa de Video MSI GeForce GTX 1650 4GB GDDR6 Ventus XS OC"
+                    data-description="Tarjeta de Video Nvidia" data-price="450000" data-stock="20"
+                    data-image="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_18725_Placa_de_Video_MSI_GeForce_GTX_1650_4GB_GDDR6_Ventus_XS_OC_ed050b8e-med.jpg">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_18725_Placa_de_Video_MSI_GeForce_GTX_1650_4GB_GDDR6_Ventus_XS_OC_ed050b8e-med.jpg"
+                        alt="">
+                    <h3>Placa de Video MSI GeForce GTX 1650 4GB GDDR6 Ventus XS OC</h3>
+                    <p>$450000</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <div class="product" data-id="4" data-name="Memoria RAM" data-description="Memoria RAM (2x16 GB)"
+                    data-price="158000" data-stock="20"
+                    data-image="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_29474_Memoria_Team_DDR5_32GB__2x16GB__6400MHz_T-Force_Delta_RGB_Black_CL40_Intel_XMP_3.0_884828e7-med.jpg">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_29474_Memoria_Team_DDR5_32GB__2x16GB__6400MHz_T-Force_Delta_RGB_Black_CL40_Intel_XMP_3.0_884828e7-med.jpg"
+                        alt="">
+                    <h3>Memoria RAM (2x16 GB) 6400MHz T-Force Delta RGB Black CL40 Intel XMP 3.0</h3>
+                    <p>$158000</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="product-name"></h2>
+            <p id="product-price"></p>
+            <p id="product-stock"></p>
+            <button id="add-to-cart">Agregar al Carrito</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 GatoStore. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

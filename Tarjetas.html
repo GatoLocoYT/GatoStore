@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GatoStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="media/GatoStore2.png" alt="GatoStore">
+        </div>
+        <nav id="navbar">
+            <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="/Componentes.html">Componentes</a>
+            <a href="/Tarjetas.html">Tarjetas de Regalo</a>
+            <a href="/Perifericos.html">Perifericos</a>
+            <a href="/Carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    <main class="content">
+        <section id="hero">
+            <h1>Tarjetas de Regalo GatoStore</h1>
+            <p>Un Regalo muy especial</p>
+        </section>
+        <section id="features">
+            <div class="product-grid">
+                <div class="product" data-id="3" data-name="Tarjeta de Regalo Steam" data-price="20000" data-stock="15">
+                    <img src="https://www.mtcgame.com/api/img-loader?url=https%3A%2F%2Fcdn5.mtcgame.com%2FImages%2FCategory%2F1087298e-9703-48d6-8e9b-4e1ad9f39f77.jpg&w=240&q=75" alt="">
+                    <h3>Tarjeta de Regalo Steam (20 USD)</h3>
+                    <p>$20000</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <div class="product" data-id="2" data-name="Tarjeta de Regalo Xbox" data-price="10000" data-stock="20">
+                    <img src="https://www.mtcgame.com/api/img-loader?url=https%3A%2F%2Fcdn5.mtcgame.com%2FImages%2FCategory%2Fd709e04d-acfa-4857-b535-f00b35e2e411.jpg&w=240&q=75" alt="">
+                    <h3>Tarjeta de Regalo Xbox (10 USD)</h3>
+                    <p>$10000</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <!-- Agregar más productos aquí con la misma estructura -->
+            </div>
+            <!-- 
+                <div class="product" data-id="1" data-name="Tarjeta de Regalo Netflix" data-price="20000" data-stock="15">
+                    <img src="https://www.mtcgame.com/api/img-loader?url=https%3A%2F%2Fcdn5.mtcgame.com%2FImages%2FSC-GiftCard%2F4841fc45-0c2c-44b1-9a09-057c8d1db48f.jpg&w=240&q=75" alt="">
+                    <h3>Tarjeta de Regalo Netflix (20 USD)</h3>
+                    <p>$20000</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+            <div class="product" data-id="4" data-name="Tarjeta de Regalo Xbox" data-price="10000" data-stock="20">
+                <img src="https://www.mtcgame.com/api/img-loader?url=https%3A%2F%2Fcdn5.mtcgame.com%2FImages%2FCategory%2Fd709e04d-acfa-4857-b535-f00b35e2e411.jpg&w=240&q=75" alt="">
+                <h3>Tarjeta de Regalo Xbox (10 USD)</h3>
+                <p>$10000</p>
+                <button class="view-product">Ver Producto</button>
+            </div>
+            <div class="product" data-id="5" data-name="Tarjeta de Regalo Nintendo" data-price="20000" data-stock="15">
+                <img src="https://www.mtcgame.com/api/img-loader?url=https%3A%2F%2Fcdn5.mtcgame.com%2FImages%2FCategory%2F2a20f670-94ba-434a-b244-0edb0ddf5baa.jpg&w=240&q=75" alt="">
+                <h3>Tarjeta de Regalo Nintendo (20 USD)</h3>
+                <p>$20000</p>
+                <button class="view-product">Ver Producto</button>
+            </div> -->
+        </section>
+    </main>
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="product-name"></h2>
+            <p id="product-price"></p>
+            <p id="product-stock"></p>
+            <button id="add-to-cart">Agregar al Carrito</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

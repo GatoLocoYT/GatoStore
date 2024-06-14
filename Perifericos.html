@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GatoStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="media/GatoStore2.png" alt="GatoStore">
+        </div>
+        <nav id="navbar">
+            <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="/Componentes.html">Componentes</a>
+            <a href="/Tarjetas.html">Tarjetas de Regalo</a>
+            <a href="/Perifericos.html">Perifericos</a>
+            <a href="/Carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    <main class="content">
+        <section id="hero">
+            <h1>Perifericos GatoStore</h1>
+            <p>Perifericos Gamers</p>
+        </section>
+        <section id="features">
+            <div class="product-grid">
+                <div class="product" data-id="1" data-name="Auriculares Gamers" data-price="9620" data-stock="15">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_11163_Auriculares_Redragon_Ares_H120_PC_978c684a-med.jpg"
+                        alt="">
+                    <h3>Auriculares Gamer Wesdar GH31 Black RGB RCA Y-Adapter</h3>
+                    <p>$9620</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <div class="product" data-id="2" data-name="Auriculares Gamers Redragon" data-price="26350"
+                    data-stock="20">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_8854_Auriculares_Redragon_Scylla_H901_PC___PS4___Switch___XBOX_d52354ae-med.jpg"
+                        alt="">
+                    <h3>Auriculares Redragon Scylla H901 PC | PS4 | Switch | XBOX</h3>
+                    <p>$26350</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <!-- Agregar más productos aquí con la misma estructura -->
+                <div class="product" data-id="3" data-name="Gabinete Gamer RGB" data-price="67570" data-stock="20">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_38038_Gabinete_Antec_NX292_RGB_MESH_White_3x120mm_RGB_Fans___1x120mm_Fan_Vidrio_Templado_Vidrio_Templado_2184f894-med.jpg"
+                        alt="">
+                    <h3>Gabinete Antec NX292 RGB Mesh White 3x120mm RGB Fans | 1x120mm Fan Vidrio Templado</h3>
+                    <p>$67570</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <div class="product" data-id="4" data-name="Monitor Gamer" data-price="103900" data-stock="20">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_17959_Monitor_ASUS_21.5__VP228HE_TN_Full_HD_1ms_HDMI_VGA_Audio_0982edcc-med.jpg"
+                        alt="">
+                    <h3>Monitor ASUS 21.5" VP228HE TN Full HD 1ms HDMI VGA Audio</h3>
+                    <p>$103900</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <div class="product" data-id="5" data-name="Teclado Gamers" data-price="12000" data-stock="20">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_22542_Teclado_Gaming_Retroiluminado_Wesdar_MK4_BR_d52ff065-med.jpg"
+                        alt="">
+                    <h3>Teclado Gaming Retroiluminado Wesdar MK4 BR</h3>
+                    <p>$12000</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <div class="product" data-id="6" data-name="Combo Mouse Gamer y Mousepad" data-price="6480"
+                    data-stock="20">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_22553_Combo_Mouse_Gaming_y_Mousepad_Wesdar_Black_Green_X2-BG_fbe90499-med.jpg"
+                        alt="">
+                    <h3>Combo Mouse Gaming y Mousepad Wesdar Black Green X2-BG</h3>
+                    <p>$6480</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <div class="product" data-id="7" data-name="Mousepad Gaming" data-price="27990" data-stock="20">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_31311_Mouse_Pad_Redragon_Flick_XL_P032__900x400mm_13a248ae-med.jpg"
+                        alt="">
+                    <h3>Mouse Pad Redragon Flick XL P032 | 900x400mm</h3>
+                    <p>$27990</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="product-name"></h2>
+            <p id="product-price"></p>
+            <p id="product-stock"></p>
+            <button id="add-to-cart">Agregar al Carrito</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 GatoStore. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

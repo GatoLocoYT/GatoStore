@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GatoStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="media/GatoStore2.png" alt="GatoStore">
+        </div>
+        <nav id="navbar">
+            <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="/Componentes.html">Componentes</a>
+            <a href="/Tarjetas.html">Tarjetas de Regalo</a>
+            <a href="/Perifericos.html">Perifericos</a>
+            <a href="/Carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    <main class="content">
+        <section id="hero">
+            <h1>Componentes GatoStore</h1>
+            <p>Hardware de confianza</p>
+        </section>
+        <section id="features">
+            <div class="product-grid">
+                <div class="product" data-id="1" data-name="Procesador Intel Core i5-10400F" data-price="304600"
+                    data-stock="15">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_38616_Procesador_Intel_Core_i5_14400F_4.7GHz_Turbo_Socket_1700_Raptor_Lake_b51753f7-med.jpg"
+                        alt="">
+                    <h3>Procesador Intel Core i5 14400F 4.7GHz Turbo Socket 1700 Raptor Lake</h3>
+                    <p>$304600</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <div class="product" data-id="2" data-name="Procesador Pentium G4560" data-price="40000"
+                    data-stock="20">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_13151_Procesador_Intel_Pentium_G4560__Chipset_H110_B150_B250_H170_Z170__LGA1151_KABY_LAKE_OEM__58161f82-med.jpg"
+                        alt="">
+                    <h3>Procesador Intel Pentium G4560 (Chipset H110/ B150/ B250/ H170/ Z170) LGA1151 KABY LAKE OEM</h3>
+                    <p>$40000</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <!-- Agregar más productos aquí con la misma estructura -->
+                <div class="product" data-id="3" data-name="Procesador AMD Ryzen 5 3600" data-price="130000"
+                    data-stock="10">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_16749_Procesador_AMD_RYZEN_5_3600_4.2GHz_Turbo_AM4_Wraith_Stealth_Cooler_f8ab4915-med.jpg"
+                        alt="">
+                    <h3>Procesador AMD Ryzen 5 3600 4.2GHz Turbo AM4 Wraith Stealth Cooler</h3>
+                    <p>$130000</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <div class="product" data-id="4" data-name="Placa de Video Nvidia RTX 4090 24GB" data-price="2699999"
+                    data-stock="10">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_35196_Placa_de_Video_MSI_GeForce_RTX_4090_24GB_GDDR6X_GAMING_X_TRIO_e3f3219f-med.jpg"
+                        alt="">
+                    <h3>Placa de Video MSI GeForce RTX 4090 24GB GDDR6X GAMING X TRIO</h3>
+                    <p>$2699999</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <div class="product" data-id="2"
+                    data-name="Placa de Video XFX Radeon RX 6650 XT 8GB GDDR6 Speedster SWFT 210"
+                    data-description="Tarjeta de Video AMD" data-price="1500000" data-stock="10"
+                    data-image="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_33401_Placa_de_Video_XFX_Radeon_RX_6650_XT_8GB_GDDR6_Speedster_SWFT_210_589f396b-med.jpg">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_33401_Placa_de_Video_XFX_Radeon_RX_6650_XT_8GB_GDDR6_Speedster_SWFT_210_589f396b-med.jpg"
+                        alt="">
+                    <h3>Placa de Video XFX Radeon RX 6650 XT 8GB GDDR6 Speedster SWFT 210</h3>
+                    <p>Tarjeta de Video AMD</p>
+                    <p>$1500000</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+                <div class="product" data-id="3" data-name="Placa de Video MSI GeForce GTX 1650 4GB GDDR6 Ventus XS OC"
+                    data-description="Tarjeta de Video Nvidia" data-price="450000" data-stock="20"
+                    data-image="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_18725_Placa_de_Video_MSI_GeForce_GTX_1650_4GB_GDDR6_Ventus_XS_OC_ed050b8e-med.jpg">
+                    <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_18725_Placa_de_Video_MSI_GeForce_GTX_1650_4GB_GDDR6_Ventus_XS_OC_ed050b8e-med.jpg"
+                        alt="">
+                    <h3>Placa de Video MSI GeForce GTX 1650 4GB GDDR6 Ventus XS OC</h3>
+                    <p>$450000</p>
+                    <button class="view-product">Ver Producto</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="product-name"></h2>
+            <p id="product-price"></p>
+            <p id="product-stock"></p>
+            <button id="add-to-cart">Agregar al Carrito</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 GatoStore. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

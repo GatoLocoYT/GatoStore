@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GatoStore - Pago</title>
+    <link rel="stylesheet" href="Pago.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="media/GatoStore2.png" alt="GatoStore">
+        </div>
+        <nav id="navbar">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="Componentes.html">Componentes</a>
+            <a href="Tarjetas.html">Tarjetas de Regalo</a>
+            <a href="Perifericos.html">Periféricos</a>
+            <a href="Carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    <main class="content">
+        <section id="payment">
+            <h2>Método de Pago</h2>
+            <div class="payment-method">
+                <h3>Seleccione método</h3>
+                <button id="cash-payment" class="payment-option">Efectivo</button>
+                <button id="card-payment" class="payment-option">Tarjeta</button>
+            </div>
+            <div id="cash-section" class="hidden">
+                <h3>Pago en Efectivo</h3>
+                <p>Total a Pagar (15% de descuento): $<span id="cash-total"></span></p>
+                <button id="pago-facil" class="payment-service">
+                    <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple111/v4/80/7a/e6/807ae69b-bf75-5518-8235-8c63a09d54c0/source/256x256bb.jpg"
+                        alt="Pago Fácil">
+                </button>
+                <button id="rapipago" class="payment-service">
+                    <img src="https://api.gamefan.la/gateways/logos/rapipago.png" alt="RapiPago">
+                </button>
+                <button id="proceed-cash-payment" class="proceed-payment-button hidden">Proceder al Pago</button>
+            </div>
+            <div id="card-section" class="hidden">
+                <h3>Pago con Tarjeta</h3>
+                <form id="card-form">
+                    <div class="form-group">
+                        <label for="card-number">Número de Tarjeta</label>
+                        <input type="text" id="card-number" maxlength="16" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-expiry">Fecha de Vencimiento (MM/AA)</label>
+                        <input type="text" id="card-expiry" pattern="\d{2}/\d{2}" placeholder="MM/AA" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-cvv">CVV</label>
+                        <input type="text" id="card-cvv" maxlength="3" required>
+                    </div>
+                    <button type="button" id="proceed-card-payment" class="proceed-payment-button">Proceder al
+                        Pago</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="Pago.js"></script>
+    <footer>
+        <p>&copy; 2024 GatoStore. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
