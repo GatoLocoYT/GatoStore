@@ -7,3 +7,5 @@ Tienda desarrollada en HTML, CSS, y JS
 - Metodo de pago Efectivo y Tarjeta
 - No valida datos (es un ejemplo del funcionamiento)
 - Control de stock
+
+link para probar: [Gato-Store](https://gato-store.netlify.app/)
